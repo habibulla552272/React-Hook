@@ -2,23 +2,34 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router";
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 function App() {
 
-  useEffect(()=>{
+ let Router= createBrowserRouter(createRoutesFromElements(
+  <Route>
+    <Route path='/' element={<Home />}/>
+    <Route path='/about' element={<About />}/>
+    <Route path='/contact' element={<Contact />}/>
 
-    console.log('hi habibulla islam habib');
-    
-  },[])
 
+
+  </Route>
+ ))
 
   return (
     <>
     
 
-      
-      <h1 className='bg-black text-white container mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime placeat blanditiis nesciunt accusantium, architecto sit error debitis suscipit excepturi quod totam sunt, animi voluptatum eaque quibusdam dolorum similique ducimus voluptas.</h1>
-      
+<RouterProvider router={Router}/>      
       
 
     </>
