@@ -11,6 +11,7 @@ import {
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import UseEffect from './Pages/UseEffect';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <Route path='/' element={<Home />}/>
     <Route path='/about' element={<About />}/>
     <Route path='/contact' element={<Contact />}/>
+    <Route path='/useeffect' element={<UseEffect/>}/>
 
 
 
