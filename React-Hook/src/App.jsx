@@ -12,20 +12,21 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import UseEffect from './Pages/UseEffect';
+import UseRef from './Pages/UseRef';
 
 function App() {
 
- let Router= createBrowserRouter(createRoutesFromElements(
-  <Route>
-    <Route path='/' element={<Home />}/>
-    <Route path='/about' element={<About />}/>
-    <Route path='/contact' element={<Contact />}/>
-    <Route path='/useeffect' element={<UseEffect/>}/>
-
-
-
-  </Route>
- ))
+ let Router = createBrowserRouter(
+   createRoutesFromElements(
+     <Route>
+       <Route path="/" element={<Home />} />
+       <Route path="/about" element={<About />} />
+       <Route path="/contact" element={<Contact />} />
+       <Route path="/useeffect" element={<UseEffect />} />
+       <Route path="/useref" element={<UseRef />} />
+     </Route>
+   )
+ );
 
   return (
     <>
