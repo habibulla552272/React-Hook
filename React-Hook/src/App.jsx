@@ -13,6 +13,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import UseEffect from './Pages/UseEffect';
 import UseRef from './Pages/UseRef';
+import UseReduce from './Pages/UseReduce';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
        <Route path="/contact" element={<Contact />} />
        <Route path="/useeffect" element={<UseEffect />} />
        <Route path="/useref" element={<UseRef />} />
+       <Route path="/usereduce" element={<UseReduce />} />
      </Route>
    )
  );
@@ -32,7 +34,7 @@ function App() {
     <>
     
 
-<RouterProvider router={Router}/>      
+        <RouterProvider router={Router}/>      
       
 
     </>
