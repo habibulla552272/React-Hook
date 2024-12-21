@@ -41,6 +41,8 @@ const UseReduce = () => {
 
     
     let contenText= useContext(contexData)
+    console.log(contenText);
+    
    
    
   return (
@@ -67,7 +69,7 @@ const UseReduce = () => {
           </button>
         </div>
         <div>
-          <div>{count.counter2}</div>
+          <div>{contenText.counter.counter2}</div>
           <button
             onClick={() =>
               contenText.counterdispatch({ type: "increment2", value: 1 })
